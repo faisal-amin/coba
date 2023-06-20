@@ -1,27 +1,37 @@
 $textcolorm:black;
 
-@mixin center{
+@mixin layout-direction($x:flex-start, $y:left){
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: $y;
+    // horizontal kiri kanan y  left/center/right
+    align-items: $x; 
+    //vertical atas bawah x flex-start/center/flex-end
 }
-
-body{
-    color: $textcolorm;
+*{
+    // margin:auto;
     box-sizing: border-box;
-    margin: auto;
+}
+body{
+    margin: 1px;
+    color: $textcolorm;     
     padding: auto;
     align-content: center;
     display: grid;
 }
 
 .kotak{
+    margin: auto;
     width: 400px;
     height: 200px;
     background-color: lightcyan;
-    @include center();
+    @include layout-direction(center,left);
     a{
+        display: block;
+        text-align: left;
+        background-color: red;
         text-decoration: none;
         color: $textcolorm;
+        font-size: 2.5em;
+        font-weight: 600;
     }
 }
