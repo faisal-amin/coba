@@ -19,6 +19,8 @@ body {
   justify-content: center;
   align-items: center;
   border-bottom: 2px solid salmon;
+  box-shadow: 2px 5px 5px lightgrey;
+  border-radius: 5px;
 }
 .kotak a {
   display: block;

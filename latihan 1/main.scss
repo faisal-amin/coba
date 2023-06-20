@@ -26,6 +26,7 @@ body{
     background-color: lightcyan;
     @include layout-direction(center,center);
     border-bottom: 2px solid salmon;
+    box-shadow: 2px 2px 5px lightgrey;
     a{
         display: block;
         text-align: left;
