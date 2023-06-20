@@ -1,0 +1,27 @@
+$textcolorm:black;
+
+@mixin center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    color: $textcolorm;
+    box-sizing: border-box;
+    margin: auto;
+    padding: auto;
+    align-content: center;
+    display: grid;
+}
+
+.kotak{
+    width: 400px;
+    height: 200px;
+    background-color: lightcyan;
+    @include center();
+    a{
+        text-decoration: none;
+        color: $textcolorm;
+    }
+}

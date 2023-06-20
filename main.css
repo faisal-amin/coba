@@ -1,0 +1,21 @@
+body {
+  color: black;
+  box-sizing: border-box;
+  margin: auto;
+  padding: auto;
+  align-content: center;
+  display: grid;
+}
+
+.kotak {
+  width: 400px;
+  height: 200px;
+  background-color: lightcyan;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.kotak a {
+  text-decoration: none;
+  color: black;
+}/*# sourceMappingURL=main.css.map */
