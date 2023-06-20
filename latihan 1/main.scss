@@ -8,7 +8,7 @@ $textcolorm:black;
     //vertical atas bawah x flex-start/center/flex-end
 }
 *{
-    // margin:auto;
+    
     box-sizing: border-box;
 }
 body{
@@ -24,7 +24,8 @@ body{
     width: 400px;
     height: 200px;
     background-color: lightcyan;
-    @include layout-direction(center,left);
+    @include layout-direction(center,center);
+    border-bottom: 2px solid salmon;
     a{
         display: block;
         text-align: left;

@@ -16,8 +16,9 @@ body {
   height: 200px;
   background-color: lightcyan;
   display: flex;
-  justify-content: left;
+  justify-content: center;
   align-items: center;
+  border-bottom: 2px solid salmon;
 }
 .kotak a {
   display: block;
