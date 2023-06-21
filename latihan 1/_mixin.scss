@@ -1,0 +1,7 @@
+@mixin layout-direction($x:flex-start, $y:left){
+    display: flex;
+    justify-content: $y;
+    // horizontal kiri kanan y  left/center/right
+    align-items: $x; 
+    //vertical atas bawah x flex-start/center/flex-end
+}

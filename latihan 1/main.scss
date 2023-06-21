@@ -1,14 +1,8 @@
+@use 'mixin';
 $textcolorm:black;
 
-@mixin layout-direction($x:flex-start, $y:left){
-    display: flex;
-    justify-content: $y;
-    // horizontal kiri kanan y  left/center/right
-    align-items: $x; 
-    //vertical atas bawah x flex-start/center/flex-end
-}
 *{
-    
+    // margin:auto;
     box-sizing: border-box;
 }
 body{
@@ -24,9 +18,7 @@ body{
     width: 400px;
     height: 200px;
     background-color: lightcyan;
-    @include layout-direction(center,center);
-    border-bottom: 2px solid salmon;
-    box-shadow: 2px 2px 5px lightgrey;
+    @include mixin.layout-direction(flex-end, left);
     a{
         display: block;
         text-align: left;

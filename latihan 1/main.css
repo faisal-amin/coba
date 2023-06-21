@@ -16,11 +16,8 @@ body {
   height: 200px;
   background-color: lightcyan;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  border-bottom: 2px solid salmon;
-  box-shadow: 2px 5px 5px lightgrey;
-  border-radius: 5px;
+  justify-content: left;
+  align-items: flex-end;
 }
 .kotak a {
   display: block;
